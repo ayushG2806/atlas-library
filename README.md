@@ -1,45 +1,54 @@
 # Atlas Library — Library Management System
 
-**Student:** Ayush Garg  
-**Registration Number:** 2502050843  
-**Section:** F4  
-**Course project:** RDBMS
+**RDBMS academic project | Manipal University Jaipur**
 
-## About the project
+## Overview
 
-Atlas Library is a browser-based library management interface I developed as part of my RDBMS project. It provides a simple interface for working with book and library records.
+Atlas Library is a browser-based interface for common library-management tasks, including maintaining book and member records, searching the catalogue, and recording book issue and return activity.
 
-## Technology
+## Features
 
-- HTML
-- CSS
-- JavaScript
-- Browser `localStorage` for client-side persistence
-
-> **Database scope:** The current version is a frontend prototype and stores its data in the browser. It does not connect to a live MySQL server. The relational schema discussed in the report is a proposed database design.
+- Dashboard with book, member, issued-book, and overdue counts
+- Add, search, and delete book records
+- Register and manage library members
+- Issue books and record returns
+- Filter the loan register and browse the catalogue
+- Export records from the interface
+- Save changes in browser `localStorage`
+- Responsive layout for desktop and smaller screens
 
 ## Run locally on macOS
 
-1. Download or clone this repository.
-2. Open the project folder in Finder.
-3. Double-click `index.html` to open it in your browser.
+1. Clone this repository or download the ZIP archive.
+2. Open the `atlas-library` project folder.
+3. Double-click `index.html`.
+4. Open it in Safari or Chrome if prompted.
+5. Use **Books**, **Members**, **Issue & Return**, and **Catalogue** to try the main workflows.
 
-Alternatively, from Terminal, change to the project directory and run:
+Alternatively, run this command from Terminal:
 
 ```bash
 open index.html
 ```
 
-No package installation or build step is required for this static frontend.
+No Node.js, npm, build step, or local server is required for this frontend.
 
 ## Project files
 
-- `index.html` — the application interface and client-side logic
-- `README.md` — project overview and setup instructions
+- `index.html` — interface, styles, sample records, and JavaScript logic.
+- `README.md` — project overview and setup instructions.
 
-## Notes
+## Data storage and database scope
 
-Data saved using browser `localStorage` remains in the same browser profile on the same device and is not a shared multi-user database. A production version would require a backend and a configured database.
+The current version stores changes in the browser's `localStorage`. It does not connect to MySQL or a backend API. The Categories, Books, Members, and Loans schema described in the project report is a proposed relational design, not a live database in this version.
+
+## Possible future improvements
+
+- Implement the proposed schema in MySQL.
+- Add a backend API and connect the interface to it.
+- Enforce foreign keys and server-side validation.
+- Use database transactions for issue and return operations.
+- Add authentication and role-based access.
 
 ## Repository
 
